@@ -5,6 +5,7 @@ const addBtn = document.getElementById("add-book-btn");
 const title = document.getElementById("title");
 const author = document.getElementById("author");
 const pages = document.getElementById("pages");
+
 const library = [];
 
 function Book(title, author, pages) {
@@ -15,8 +16,10 @@ function Book(title, author, pages) {
 
 function addNewBook(event) {
   event.preventDefault();
-  const book = new Book(title.value, author.value, pages.value);
 
+  if (title.value === "" || author.value === "" || pages.value === "") return;
+
+  const book = new Book(title.value, author.value, pages.value);
   library.push(book);
 
   clearInputs();
