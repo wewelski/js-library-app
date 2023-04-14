@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Trebuchet MS", Georgia, sans-serif;
   }
   
   #root {
@@ -61,16 +61,21 @@
   .add-btn {
     background-color: #118ab2;
     color: #fff;
-    font-size: 32px;
+    font-size: 30px;
     border: none;
     border-radius: 50%;
     padding: 0.25em;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
+    transition: .1s ease;
   }
   
   .add-btn:hover {
     cursor: pointer;
+    height: 60px;
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
   }
   
   .modal {
@@ -121,12 +126,12 @@
     background-color: #06d6a0;
     border: none;
     color: #fff;
-    width: 10ch;
+    width: 15ch;
   }
 
   .cancel-btn {
     background-color: #ef476f;
     border: none;
     color: #fff;;
-    width: 10ch;
+    width: 15ch;
   }
