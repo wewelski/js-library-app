@@ -7,17 +7,25 @@ const author = document.getElementById("author");
 const pages = document.getElementById("pages");
 const main = document.getElementById("main");
 
-function Book(title, author, pages) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
+// function Book(title, author, pages) {
+//   this.title = title;
+//   this.author = author;
+//   this.pages = pages;
+// }
+
+class Book {
+  constructor(title, author, pages) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+  }
 }
 
 function titleCase(str) {
   str = str.toLowerCase();
   str = str.split(" ");
 
-  for (var i = 0; i < str.length; i++) {
+  for (let i = 0; i < str.length; i++) {
     str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
   }
 
